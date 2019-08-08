@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Memory Test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+    <link rel="stylesheet" href="css/memory.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Test Your Memory</h1>
+        </header>
+
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+        	<span class="attempts">0</span> Attempt(s)
+
+            <div class="timer">
+            </div>
+
+            <div class="restart" onclick=startGame()>
+        		<i class="fa fa-repeat"></i>
+        	</div>
+        </section>
+
+        <ul class="deck" id="tile-deck">
+            <li class="tile" type="diamond">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="tile" type="plane">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="tile" type="anchor">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="tile" type="bolt" >
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="tile" type="cube">
+                <i class="fa fa-cube"></i>
+            </li>
+            <li class="tile" type="anchor">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="tile" type="leaf">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="tile" type="bicycle">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="tile" type="diamond">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="tile" type="bomb">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="tile" type="leaf">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="tile" type="bomb">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="tile" type="bolt">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="tile" type="bicycle">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="tile" type="plane">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="tile" type="cube">
+                <i class="fa fa-cube"></i>
+            </li>
+        </ul>
+
+        <div id="youWin" class="overlay">
+            <div class="popup">
+                <h1>Congratulations</h1>
+                <a class="close" href=# >X</a>
+                <div class="content-1">
+                    You've done it!
+                </div>
+                <div class="content-2">
+                    <p>It only took <span id=finalAttempt> </span> attempts! </p>
+                    <p>in <span id=totalTime> </span> </p>
+                    <p>Rating:  <span id=starRating></span></p>
+                </div>
+                <button id="play-again"onclick="playAgain()">
+                    Play again ?</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <button class="button button2"><a href="http://davem.design/memory_game/code/css.html">VIEW CSS SOURCE</a></button>
+         <button class="button button2"><a href="http://davem.design/memory_game/code/js.html">VIEW JAVASCRIPT SOURCE</a></button>    
+    </div>
+<script src="js/memory.js"></script>
+</body>
+</html>
