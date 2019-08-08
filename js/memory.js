@@ -37,8 +37,6 @@ function shuffle(array) {
     }
     return array;
 };
-git rm <file1> <file2> <file3>........
-
 
 // shuffles tiles when page is refreshed or loads
 document.body.onload = startGame();
@@ -97,7 +95,7 @@ function tileOpen() {
 };
 
 
-// function defines when tiles match
+// defines when tiles match
 function matched(){
     openedTiles[0].classList.add("match", "disabled");
     openedTiles[1].classList.add("match", "disabled");
@@ -107,7 +105,7 @@ function matched(){
 }
 
 
-// function defines when tiles don't match
+// defines when tiles don't match
 function unmatched(){
     openedTiles[0].classList.add("unmatched");
     openedTiles[1].classList.add("unmatched");
@@ -121,7 +119,7 @@ function unmatched(){
 }
 
 
-// function temporarily disables tiles
+// temporarily disables tiles
 function disable(){
     Array.prototype.filter.call(tiles, function(tile){
         tile.classList.add('disabled');
@@ -129,7 +127,7 @@ function disable(){
 }
 
 
-// function enables tiles and disables matched tiles
+// enables tiles and disables matched tiles
 function enable(){
     Array.prototype.filter.call(tiles, function(tile){
         tile.classList.remove('disabled');
@@ -140,7 +138,7 @@ function enable(){
 }
 
 
-// function counts number of attempts
+// counts number of attempts
 function attemptCounter(){
     attempts++;
     counter.innerHTML = attempts;
@@ -168,8 +166,7 @@ function attemptCounter(){
     }
 }
 
-
-// function creates and runs timer
+// creates and runs timer
 var seconds = 0, minutes = 0; hours = 0;
 var timer = document.querySelector(".timer");
 var interval;
@@ -188,8 +185,7 @@ function startTimer(){
     },1000);
 }
 
-
-// function to show congratulation modal, with attempts, time and star rating when all tiles match
+// shows congratulation modal, with attempts, time and star rating when all tiles match
 function congratulations(){
     if (matchedTile.length == 16){
         clearInterval(interval);
@@ -211,8 +207,7 @@ function congratulations(){
     };
 }
 
-
-// function closes congratulations modal and restarts game
+// closes congratulations modal and restarts game
 function closeModal(){
     closeicon.addEventListener("click", function(e){
         modal.classList.remove("show");
@@ -221,14 +216,14 @@ function closeModal(){
 }
 
 
-// function to restart game from button on congratulation modal
+// restart game from button on congratulation modal
 function playAgain(){
     modal.classList.remove("show");
     startGame();
 }
 
 
-// loop to add event listeners to each tile
+// adds listeners to each tile
 for (var i = 0; i < tiles.length; i++){
     tile = tiles[i];
     tile.addEventListener("click", displayTile);
