@@ -2,7 +2,7 @@
 let tile = document.getElementsByClassName("tile");
 let tiles = [...tile]
 
-// declares deck element
+// sets deck element
 const deck = document.getElementById("tile-deck");
 
 // declares starting attempts and counter
@@ -24,7 +24,6 @@ let modal = document.getElementById("youWin")
 // declares array for opened tiles
 var openedTiles = [];
 
-
 // function shuffles tiles and returns shuffled array (from http://stackoverflow.com/a/2450976)
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
@@ -40,7 +39,6 @@ function shuffle(array) {
 
 // shuffles tiles when page is refreshed or loads
 document.body.onload = startGame();
-
 
 // function to start a new game
 function startGame(){
@@ -71,14 +69,12 @@ function startGame(){
     clearInterval(interval);
 }
 
-
 // toggles open, show and disable classes to displayTiles
 var displayTile = function (){
     this.classList.toggle("open");
     this.classList.toggle("show");
     this.classList.toggle("disabled");
 };
-
 
 // function adds opened tiles to the OpenedTiles list and checks if tiles are matched or not
 function tileOpen() {
@@ -94,7 +90,6 @@ function tileOpen() {
     }
 };
 
-
 // defines when tiles match
 function matched(){
     openedTiles[0].classList.add("match", "disabled");
@@ -103,7 +98,6 @@ function matched(){
     openedTiles[1].classList.remove("show", "open", );
     openedTiles = [];
 }
-
 
 // defines when tiles don't match
 function unmatched(){
@@ -118,14 +112,12 @@ function unmatched(){
     },1100);
 }
 
-
 // temporarily disables tiles
 function disable(){
     Array.prototype.filter.call(tiles, function(tile){
         tile.classList.add('disabled');
     });
 }
-
 
 // enables tiles and disables matched tiles
 function enable(){
@@ -136,7 +128,6 @@ function enable(){
         }
     });
 }
-
 
 // counts number of attempts
 function attemptCounter(){
@@ -215,13 +206,11 @@ function closeModal(){
     });
 }
 
-
 // restart game from button on congratulation modal
 function playAgain(){
     modal.classList.remove("show");
     startGame();
 }
-
 
 // adds listeners to each tile
 for (var i = 0; i < tiles.length; i++){
