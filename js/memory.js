@@ -1,4 +1,4 @@
-// contains game tiles
+// holds game tiles
 let tile = document.getElementsByClassName("tile");
 let tiles = [...tile]
 
@@ -37,6 +37,7 @@ function shuffle(array) {
     }
     return array;
 };
+git rm <file1> <file2> <file3>........
 
 
 // shuffles tiles when page is refreshed or loads
