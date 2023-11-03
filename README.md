@@ -1,3 +1,6 @@
+
+[![Memory Game Image](https://github.com/dhipflip/memory-game/blob/master/Memory_Game.png)](https://memory-game-xi.vercel.app/)
+
 # Test Your Memory
 
 * Back to basics! A classic Memory Game built with html and vanila JavaScript, styled and annimated with CSS.
