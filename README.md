@@ -1,5 +1,6 @@
-# Test Your Memory Game
+# Test Your Memory
 
+* Classic Memory Game built with vanila JavaScript
 
 ## How to Play
 
