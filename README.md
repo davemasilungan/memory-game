@@ -1,5 +1,6 @@
-<a href="https://memory-game-xi.vercel.app/">
+<a href="https://memory-game-xi.vercel.app/" target="_blank" rel="noreferrer noopener">
   <img src="https://github.com/dhipflip/memory-game/blob/master/Memory_Game.png" alt="Memory Game Image"">
+  
 </a>
 
 # Test Your Memory
@@ -9,7 +10,7 @@
 ## How to Play
 
 
-* <a href="https://memory-game-xi.vercel.app/" target="_blank">Click Here</a> to launch the game.
+* <a href="https://memory-game-xi.vercel.app/" target="_blank" rel="noreferrer noopener">Click Here</a> to launch the game.
 
 
 ## Challenge
