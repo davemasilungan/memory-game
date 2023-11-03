@@ -1,6 +1,6 @@
 # Test Your Memory
 
-* Classic Memory Game built with vanila JavaScript
+* Back to basics! A classic Memory Game built with html and vanila JavaScript, styled and annimated with CSS.
 
 ## How to Play
 
