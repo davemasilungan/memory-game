@@ -1,4 +1,4 @@
-### Udacity programming course project
+## Udacity programming course project
 
 
 <a href="https://memory-game-xi.vercel.app/" target="_blank" rel="noreferrer noopener">
