@@ -65,7 +65,7 @@ function startGame(){
     minutes = 0;
     hours = 0;
     var timer = document.querySelector(".timer");
-    timer.innerHTML = "0 mins 0 secs";
+    timer.innerHTML = "Timer: 0 mins 0 secs ";
     clearInterval(interval);
 }
 
@@ -141,14 +141,14 @@ function attemptCounter(){
         startTimer();
     }
     // sets star rating based on number attempts
-    if (attempts > 8 && attempts < 12){
+    if (attempts > 6 && attempts < 10){
         for( i= 0; i < 3; i++){
             if(i > 1){
                 stars[i].style.visibility = "collapse";
             }
         }
     }
-    else if (attempts > 13){
+    else if (attempts > 11){
         for( i= 0; i < 3; i++){
             if(i > 0){
                 stars[i].style.visibility = "collapse";
@@ -163,7 +163,7 @@ var timer = document.querySelector(".timer");
 var interval;
 function startTimer(){
     interval = setInterval(function(){
-        timer.innerHTML = minutes + " mins " +seconds+ " secs";
+        timer.innerHTML = "Timer: " + minutes + " mins " +seconds+ " secs ";
         seconds++;
         if(seconds == 60){
             minutes++;

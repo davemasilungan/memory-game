@@ -18,7 +18,8 @@ body {
 }
 
 h1 {
-	font-family: 'Megrim', cursive;
+	/* font-family: 'Fira Sans', sans-serif; */
+	font-family: 'Zen Dots', sans-serif;
 }
 
 *, *::before, *::after {
@@ -32,12 +33,6 @@ h1 {
 	flex-direction: column;
 }
 
-.wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-  }
-
 /* styles for the deck and tiles */
 .deck {
 	background-color: #ffffff;
@@ -46,14 +41,13 @@ h1 {
 	background-size: cover;
 	background-position: center;
 	width: 85%;
-	padding: .25rem;
-	border-radius: 4px;
+	padding: 1.25rem;
+	border-radius: 20px;
 	box-shadow: 8px 9px 40px 0 rgba(44, 60, 70, 0.9);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	margin: 0 0 3em;
 }
 
 .deck .tile {
@@ -117,10 +111,9 @@ h1 {
 }
 
 .score-panel .stars {
-	margin: 0;
 	padding: 0;
 	display: inline-block;
-	margin: 0 5px 0 0;
+	margin: 0 .5rem 0 0;
 }
 
 .score-panel .stars li {
@@ -131,15 +124,24 @@ h1 {
 .score-panel .restart {
 	float: right;
 	cursor: pointer;
+	margin: 0 0 0 2rem;
+
 }
 
 .fa-star {
 	color: #FF0080;
 }
 
+.attempts-group {
+	display: inline-block;
+	margin: 0 1rem 0 0;
+
+}
+
+
 .timer {
 	display: inline-block;
-	margin: 0 1rem;
+	margin: 0 1 0 0rem;
 }
 
 
@@ -160,19 +162,19 @@ h1 {
 	visibility: visible;
 	opacity: 1;
 }
-  
+
 .popup {
 	margin: 70px auto;
-	padding: 20px;
+	padding: 20px 20px 60px 20px;
 	background: #ffffff;
-	border-radius: 5px;
+	border-radius: 20px;
 	width: 85%;
 	position: relative;
 	text-align: center;
 	transition: all 5s ease-in-out;
 	font-family: 'Arial', sans-serif;
 }
-  
+
 .popup .close {
 	position: absolute;
 	top: 20px;
@@ -210,45 +212,11 @@ h1 {
 	display: block;
 	margin: 0 auto;
 	width: 30%;
+	min-width: 140px;
 	font-family: 'Arial', sans-serif;
 	color: #ffffff;
 	border-radius: 5px;
 }
-
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.button2 {
-    background-color: #0fb8ad; 
-    color: white;
-	text-decoration: none;
-}
-
-.button2:hover {
-    background-color: #008CBA;
-    text-decoration: none;
-    color: white;
-}
-
-a {color:#FFFFFF;
-	text-decoration: none;
-}      /* unvisited link */
-a:visited {color:#FFFFFF;}  /* visited link */
-a:hover {color:#FFFFFF;}  /* mouse over link */
-a:active {color:#FFFFFF;}  /* selected link */
-
 
 /* animations */
 @keyframes rubberBand {
