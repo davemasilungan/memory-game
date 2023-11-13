@@ -1,4 +1,9 @@
+<base target="_blank">
 ## Udacity programming course project
+
+[go](http://stackoverflow.com){:target="_blank" rel="noopener"}
+
+[![Header](https://github.com/davemasilungan/memory-game/blob/master/Memory_Game.png?raw=true "Header"){:target="_blank" rel="noopener"}](https://memory-game-xi.vercel.app/)  
 
 
 <a href="https://memory-game-xi.vercel.app/" target="_blank" rel="noreferrer noopener">
