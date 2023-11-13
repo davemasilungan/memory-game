@@ -3,9 +3,9 @@
 </a>
 
 
-## Udacity programming course project
+# Udacity programming course project
 
-# Test Your Memory
+## Test Your Memory
 
 * Back to basics! A classic Memory Game built with html and vanila JavaScript, styled and annimated with CSS.
 
